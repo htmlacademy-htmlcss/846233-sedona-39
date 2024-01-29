@@ -2,6 +2,7 @@
 
 * Студент: [Вероника Мисько](https://up.htmlacademy.ru/htmlcss/39/user/846233).
 * Наставник: `Неизвестно`.
+* Сайт: [Мой проект Седона] (https://veronicamisko.github.io/846233-sedona-39/)
 
 ---
 
