@@ -11,6 +11,10 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 
 ---
 
+---
+### Заметки
+* Код гайд: [Кодгайд HTMLAcademy] (https://codeguide.academy/html-css.html#html-attr-order)
+
 ### Памятка
 
 #### 1. Зарегистрируйтесь на Гитхабе
