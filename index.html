@@ -30,10 +30,11 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
+              <span class="navigation-link-counter">12</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link btn" href="#">Хочу сюда!</a>
+            <a class="navigation-btn btn" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -75,23 +76,23 @@
           </li>
         </ul>
       </section>
-      <section class="popular">
+      <section class="popular-advantages">
         <h2 class="visually-hidden">Популярное в городе</h2>
         <p class="section-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
         <p class="section-description">Опытный персонал и качественное обслуживание!</p>
 
-        <ul class="popular-list">
-          <li class="popular-item">
-            <h3 class="popular-title">Жильё</h3>
-            <p class="popular-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        <ul class="popular-advantages-list">
+          <li class="popular-advantages-item">
+            <h3 class="advantages-title">Жильё</h3>
+            <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="popular-item">
-            <h3 class="popular-title">Еда</h3>
-            <p class="popular-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          <li class="popular-advantages-item">
+            <h3 class="advantages-title">Еда</h3>
+            <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="popular-item">
-            <h3 class="popular-title">Сувениры</h3>
-            <p class="popular-description">Не только китайского, но и настоящего местного производства!</p>
+          <li class="popular-advantages-item">
+            <h3 class="advantages-title">Сувениры</h3>
+            <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
@@ -99,18 +100,44 @@
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="section-title">Заинтересовались?</p>
         <p class="section-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="search-link btn">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <a class="search-btn btn">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
       <section class="subscription">
-        <h2 class="visually-hidden">Подписка на рассылку</h2>
-        <p class="section-title">Подпишитесь на рассылку</p>
+        <h2 class="section-title">Подпишитесь на рассылку</h2>
         <p class="section-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" name="email" placeholder="Ваш e-mail">
+          <label class="subscription-field">
+            <span class="visually-hidden">Ваш e-mail</span>
+            <input class="subscription-input" type="email" name="email" placeholder="Ваш e-mail">
+          </label>
           <button class="subscription-btn btn" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
-    <footer></footer>
+    <footer class="page-footer">
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link social-link-vk" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">В Контакте</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link social-link-tg" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link social-link-yt" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+
+      <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+
+      <a class="footer-copyright" href="https://htmlacademy.ru/">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
+    </footer>
   </body>
 </html>
