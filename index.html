@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="logo" href="#">
           <img class="logo-img" src="#" width="140" height="70" alt="Логотип гостиницы Седона">
@@ -41,10 +41,10 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index">
+    <main class="main-index" data-test="main">
       <h1 class="visually-hidden">Туристический городок Седона</h1>
-      <img src="#" alt="Добро пожаловать в Седону">
-      <section class="advantages">
+      <img class="promo" src="#" data-test="hero" alt="Добро пожаловать в Седону">
+      <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <p class="section-title">Седона — небольшой городок в Аризоне,
           заслуживающий большего!</p>
@@ -77,13 +77,12 @@
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
         </ul>
-      </section>
-      <section class="popular-advantages">
+
         <h2 class="visually-hidden">Популярное в городе</h2>
         <p class="section-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
         <p class="section-description">Опытный персонал и качественное обслуживание!</p>
 
-        <ul class="popular-advantages-list">
+        <ul class="advantages-list popular-advantages-list">
           <li class="popular-advantages-item">
             <h3 class="advantages-title">Жильё</h3>
             <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -98,14 +97,14 @@
           </li>
         </ul>
       </section>
-      <section class="search">
+      <section class="search" data-test="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="section-title">Заинтересовались?</p>
         <p class="section-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
           в Седоне</p>
         <a class="search-btn btn">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
-      <section class="subscription">
+      <section class="subscription" data-test="subscribe">
         <h2 class="section-title">Подпишитесь на рассылку</h2>
         <p class="section-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -117,7 +116,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link social-link-vk" href="https://vk.com/htmlacademy">
