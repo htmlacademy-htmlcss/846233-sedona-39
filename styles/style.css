@@ -293,6 +293,8 @@ body {
 .social-list {
   list-style: none;
   width: 142px;
+  margin: 0;
+  padding: 0;
 }
 
 .page-footer a {
@@ -310,6 +312,11 @@ body {
 /*Catalog*/
 
 /*Filter*/
+
+.catalog-wrapper {
+  width: 1060px;
+  margin: 0 auto;
+}
 
 .inner-wrapper {
   background-image: url("../images/background/filter.jpg");
