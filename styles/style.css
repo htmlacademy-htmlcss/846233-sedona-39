@@ -57,6 +57,7 @@ body {
 .page-header {
   color: #000000;
   background-color: #ffffff;
+  margin-bottom: 0;
 }
 
 .navigation {
@@ -68,13 +69,17 @@ body {
 .logo {
   display: block;
   margin-right: 28px;
+  position: absolute;
 }
 
 .navigation-list {
   margin: 0;
   padding: 0;
   width: 465px;
-  list-style: none;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 168px;
 }
 
 .navigation-link {
@@ -85,11 +90,26 @@ body {
   color: #000000;
   text-decoration: none;
   text-align: center;
+  padding: 20px 16px;
+  display: block;
 }
 
 .navigation-user {
   width: 320px;
+  margin: 0;
   margin-left: auto;
+  padding: 0;
+}
+
+.navigation-user .navigation-link {
+  min-width: 44px;
+  min-height: 64px;
+  padding: 0;
+  display: block;
+}
+
+.navigation-user .navigation-item {
+  align-self: center;
 }
 
 .navigation-link-counter {
@@ -107,6 +127,8 @@ body {
   text-align: center;
   text-decoration: none;
   font-family: inherit;
+  padding: 8px 50px;
+  border-radius: 4px;
 }
 
 .navigation-btn {
@@ -130,12 +152,14 @@ body {
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   background-position: left bottom, left top;
+  margin-bottom: 69px;
 }
 
 .promo-img {
   display: block;
   margin: 0 auto;
   padding-bottom: 82px;
+  padding-top: 52px;
 }
 
 /*Advantages*/
@@ -147,18 +171,30 @@ body {
   color: #000000;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .section-description {
   text-align: center;
   font-size: 22px;
   line-height: 26px;
+  margin: 0;
+}
+
+.advantages .section-title {
+  margin-bottom: 25px;
+}
+
+.advantages-section-description {
+  margin-bottom: 90px;
 }
 
 .advantages-list {
   text-align: center;
-  list-style: none;
+  list-style-type: none;
   margin: 0;
+  margin-bottom: 64px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -213,13 +249,18 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+.popular-section-description {
+  margin-bottom: 64px;
+}
+
 .popular-advantages-list {
   width: 1200px;
+  margin-bottom: 96px;
 }
 
 .popular-advantages-item {
   width: 400px;
-  padding: 85px;
+  padding: 128px 85px;
   box-sizing: border-box;
 }
 
@@ -233,8 +274,12 @@ body {
   width: 592px;
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 96px;
 }
 
+.search-section-description {
+  margin-bottom: 54px;
+}
 
 
 /*Subscription*/
@@ -246,6 +291,8 @@ body {
 .subscription-wrapper {
   width: 684px;
   margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .subscription .section-description {
@@ -260,19 +307,26 @@ body {
 
 .subscription-input {
   width: 452px;
+  padding: 12px 20px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 4px 0px 0px 4px;
 }
 
 .subscription-input::placeholder {
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 24px;
   color: #000000;
   opacity: 0.6;
-  background-color: #F2F2F2;
+  vertical-align: baseline;
 }
 
 .subscription-btn {
   background-color: #82B3D3;
   width: 232px;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
 }
 
 
@@ -283,6 +337,8 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 30px;
 
 }
 
@@ -291,10 +347,16 @@ body {
 }
 
 .social-list {
-  list-style: none;
+  list-style-type: none;
   width: 142px;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  min-width: 47px;
+  min-height: 40px;
 }
 
 .page-footer a {
@@ -335,7 +397,7 @@ body {
 }
 
 .breadcrumbs {
-  list-style: none;
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
@@ -366,7 +428,7 @@ body {
 }
 
 .filter-list {
-  list-style: none;
+  list-style-type: none;
   color: #ffffff;
   font-size: 18px;
   line-height: 23px;
@@ -413,12 +475,12 @@ body {
 }
 
 .catalog-view {
-  list-style: none;
+  list-style-type: none;
   margin-left: 70px;
 }
 
 .catalog-list {
-  list-style: none;
+  list-style-type: none;
 }
 
 /*Card*/
@@ -450,7 +512,7 @@ body {
 /*Pagination*/
 
 .pagination {
-  list-style: none;
+  list-style-type: none;
 }
 
 .pagination-link {
