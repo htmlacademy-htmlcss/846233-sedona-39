@@ -297,10 +297,10 @@ body {
 
 .subscription .section-description {
   padding: 0 70px;
+  margin-bottom: 54px;
 }
 
 .subscription-form {
-  width: 684px;
   text-align: center;
   display: flex;
 }
@@ -311,15 +311,11 @@ body {
   background-color: #F2F2F2;
   border: none;
   border-radius: 4px 0px 0px 4px;
-}
-
-.subscription-input::placeholder {
+  box-sizing: border-box;
   font-family: "PT Sans";
   font-size: 18px;
-  line-height: 24px;
+  line-height: 30px;
   color: #000000;
-  opacity: 0.6;
-  vertical-align: baseline;
 }
 
 .subscription-btn {
@@ -327,6 +323,9 @@ body {
   width: 232px;
   border: none;
   border-radius: 0px 4px 4px 0px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
 }
 
 
@@ -352,11 +351,13 @@ body {
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
+  display: flex;
 }
 
 .social-link {
   min-width: 47px;
   min-height: 40px;
+  display: block;
 }
 
 .page-footer a {
@@ -370,6 +371,11 @@ body {
   text-transform: uppercase;
 }
 
+.copyright {
+  display: block;
+  min-width: 115px;
+  min-height: 33px;
+}
 
 /*Catalog*/
 
@@ -386,6 +392,8 @@ body {
   background-size: cover;
   background-color: #65b0e1;
   background-position: left top;
+  padding-top: 35px;
+  padding-bottom: 70px;
 }
 
 .inner-header {
@@ -393,11 +401,19 @@ body {
 }
 
 .inner-header-title {
-  padding-top: 35px;
+  margin: 0;
+  margin-bottom: 11px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
 }
 
 .breadcrumbs {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs-link {
@@ -405,6 +421,10 @@ body {
   color: inherit;
   font-size: 16px;
   line-height: 21px;
+  min-width: 13px;
+  min-height: 15px;
+  display: block;
+  margin-right: 29px;
 }
 
 .filter-form {
@@ -413,6 +433,19 @@ body {
 
 .filter-group {
   border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-group-title {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
 }
 
 .filter-infostructure {
@@ -436,33 +469,44 @@ body {
   padding: 0;
 }
 
-.filter-group-title {
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: capitalize;
+.filter-item {
+  margin-bottom: 16px;
+}
+
+.filter-item:last-child {
+  margin-bottom: 0;
 }
 
 .filter-btns {
   margin-left: 70px;
+  display: flex;
+  flex-direction: column;
 }
 
 .submit-btn {
   background-color: #82B3D3;
   display: block;
+  margin-top: 56px;
+  margin-bottom: 32px;
+  border: none;
 }
 
 .reset-btn {
   background-color: transparent;
   display: block;
+  border: none;
 }
 
 .catalog-sort {
   display: flex;
+  padding-top: 50px;
+  margin-bottom: 40px;
+  align-items: center;
 }
 
 .catalog-title {
+  margin: 0;
+  padding: 0;
   margin-right: auto;
 }
 
@@ -472,15 +516,45 @@ body {
   color: #333333;
   background-color: #ffffff;
   font-family: inherit;
+  width: 292px;
+  padding: 14px 20px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
 }
 
 .catalog-view {
   list-style-type: none;
+  margin: 0;
   margin-left: 70px;
+  padding: 0;
+  width: 160px;
+  display: flex;
+}
+
+.catalog-view-item {
+  margin-right: 8px;
+}
+
+.catalog-view-item:last-child {
+  margin-right: 0;
+}
+
+.catalog-view-link {
+  display: block;
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: 4px;
+  border: 2px solid #E5E5E5;
+}
+
+.catalog-view-link-active {
+  border-color: #000000;
 }
 
 .catalog-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /*Card*/
@@ -513,6 +587,15 @@ body {
 
 .pagination {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-link {
@@ -523,16 +606,30 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  padding: 11px 23px;
 }
+
+
 
 .pagination-link-current {
   color: #000000;
   background-color: #F2F2F2;
+  padding: 12px 26px;
 }
 
 .pagination-link-more {
   color: #000000;
   background-color: transparent;
+  padding: 16px 21px;
+}
+
+.pagination-link-doble {
+  padding: 12px 19px;
 }
 
 /*Subscription Special*/
