@@ -172,6 +172,7 @@ body {
 .btn:hover,
 .btn:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .btn:active {
@@ -182,6 +183,7 @@ body {
 .btn--light:hover,
 .btn--light:focus {
   background-color: #68A2CA;
+  outline: none;
 }
 
 .btn--light:active {
@@ -192,6 +194,7 @@ body {
 .btn--chosen:hover,
 .btn--chosen:focus {
   background-color: #6C9E42;
+  outline: none;
 }
 
 .btn--chosen:active {
@@ -508,6 +511,7 @@ body {
 
 .social-icon:focus {
   fill: #68A2CA;
+  outline: none;
 }
 
 .social-icon:active {
@@ -530,8 +534,9 @@ body {
   color: #756157;
 }
 
-..contact:focus {
+.contact:focus {
   color: #756157;
+  outline: none;
 }
 
 .contact:active {
@@ -554,6 +559,7 @@ body {
 
 .copyright-icon:focus {
   fill: #756157;
+  outline: none;
 }
 
 .copyright-icon:active {
@@ -632,6 +638,7 @@ body {
 
 .breadcrumbs-link:focus {
   color: #fffff;
+  outline: none;
 }
 
 .breadcrumbs-link:active {
@@ -644,6 +651,15 @@ body {
 
 .breadcrumbs-icon:hover {
   fill: rgba(255, 255, 255, 0.60);
+}
+
+.breadcrumbs-icon:focus {
+  color: #fffff;
+  outline: none;
+}
+
+.breadcrumbs-icon:active {
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .filter-form {
@@ -757,11 +773,11 @@ body {
 }
 
 .catalog-select-control:hover {
-  border: 2px solid #68A2CA;
+  outline: 2px solid #68A2CA;
 }
 
 .catalog-select-control:focus {
-  border: 2px solid #68A2CA;
+  outline: 2px solid #68A2CA;
 }
 
 .catalog-view {
@@ -920,7 +936,6 @@ body {
   padding: 0;
   display: flex;
   margin-bottom: 60px;
-  cursor: pointer;
 }
 
 .pagination-item:not(:last-child) {
@@ -940,21 +955,14 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 4px;
-  padding: 11px 23px;
+  text-align: center;
+  padding-top: 12px;
+  cursor: pointer;
 }
-
-
-
-
 
 .pagination-link-more {
   color: #000000;
   background-color: transparent;
-  padding: 16px 21px;
-}
-
-.pagination-link-doble {
-  padding: 12px 19px;
 }
 
 .pagination-link:hover {
@@ -963,7 +971,7 @@ body {
 }
 
 .pagination-link:focus {
-  border: 1px solid #82B3D3;
+  outline: 1px solid #82B3D3;
   background-color: #68A2CA;
 }
 
@@ -978,8 +986,8 @@ body {
 .pagination-link-current:active {
   color: #000000;
   background-color: #F2F2F2;
-  padding: 12px 26px;
   border: none;
+  outline: none;
 }
 
 .pagination-link-more:hover,
@@ -987,6 +995,7 @@ body {
 .pagination-link-more:active {
   border: none;
   background-color: #ffffff;
+  outline: none;
 }
 
 
