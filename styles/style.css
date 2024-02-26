@@ -94,8 +94,14 @@ body {
   display: block;
 }
 
+.navigation-item {
+  position: relative;
+}
+
+
+
 .navigation-user {
-  width: 300px;
+  width: 268px;
   margin: 0;
   margin-left: auto;
   padding: 0;
@@ -112,6 +118,29 @@ body {
   align-self: center;
 }
 
+.navigation-user .navigation-item:nth-child(1) .navigation-link {
+  background-image: url(../images/icons/icons-search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-user .navigation-item:nth-child(2) .navigation-link {
+  background-image: url(../images/icons/icons-heart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.navigation-link-current::before {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  left: 16px;
+  right: 16px;
+  background-color: #756257;
+  content: "";
+}
+
 .navigation-link-counter {
   font-size: 10px;
   text-align: center;
@@ -119,7 +148,11 @@ body {
   color: #ffffff;
   background-color: #7DB54F;
   border-radius: 50%;
-  padding: 4px 5px;
+  padding: 4px;
+  font-weight: 400;
+  position: absolute;
+  top: 11px;
+  left: 19px;
 }
 
 .btn {
@@ -130,7 +163,66 @@ body {
   text-decoration: none;
   font-family: inherit;
   padding: 8px 50px;
+  border: none;
   border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #615048;
+}
+
+.btn:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.btn--light:hover,
+.btn--light:focus {
+  background-color: #68A2CA;
+}
+
+.btn--light:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.btn--chosen:hover,
+.btn--chosen:focus {
+  background-color: #6C9E42;
+}
+
+.btn--chosen:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.reset-btn:hover {
+  color: rgba(255, 255, 255, 0.60);
+  background-color: transparent;
+}
+
+.reset-btn:focus {
+  border-radius: 4px;
+  outline: 3px solid #83B3D3;
+  background-color: transparent;
+}
+
+.reset-btn:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.reset-btn:focus-visible {
+  outline: 3px solid #83B3D3;
+}
+
+
+.reset-btn:active {
+  color: rgba(255, 255, 255, 0.30);
+  background-color: transparent;
+  border: none;
 }
 
 .navigation-btn {
@@ -138,8 +230,8 @@ body {
   font-weight: 700;
   line-height: 20px;
   text-decoration: none;
-  width: 160px;
   margin-left: 20px;
+  padding: 8px 34px;
 }
 
 /*Promo*/
@@ -220,6 +312,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .advantages-img {
@@ -265,8 +358,35 @@ body {
 
 .popular-advantages-item {
   width: 400px;
-  padding: 128px 85px;
+  padding: 80px 85px;
   box-sizing: border-box;
+}
+
+.popular-advantages-item .advantages-title {
+  padding-top: 105px;
+}
+
+.popular-advantages-item .advantages-description {
+  margin: 0;
+  padding: 0;
+}
+
+.popular-advantages-item:nth-child(1) {
+  background-image: url(../images/icons/icon-house.svg);
+  background-repeat: no-repeat;
+  background-position: center 80px;
+}
+
+.popular-advantages-item:nth-child(2) {
+  background-image: url(../images/icons/icon-food.svg);
+  background-repeat: no-repeat;
+  background-position: center 80px;
+}
+
+.popular-advantages-item:nth-child(3) {
+  background-image: url(../images/icons/icon-souvenir.svg);
+  background-repeat: no-repeat;
+  background-position: center 80px;
 }
 
 .popular-advantages-item:nth-child(odd) {
@@ -284,6 +404,12 @@ body {
 
 .search-section-description {
   margin-bottom: 54px;
+}
+
+.search-btn {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
 }
 
 
@@ -363,6 +489,30 @@ body {
   min-width: 47px;
   min-height: 40px;
   display: block;
+  position: relative;
+}
+
+.social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #83B3D3;
+}
+
+.social-icon:hover {
+  fill: #68A2CA;
+}
+
+.social-icon:focus {
+  fill: #68A2CA;
+}
+
+.social-icon:active {
+  fill: #68A2CA;
+  fill-opacity: 0.3;
 }
 
 .page-footer a {
@@ -376,10 +526,39 @@ body {
   text-transform: uppercase;
 }
 
+.contact:hover {
+  color: #756157;
+}
+
+..contact:focus {
+  color: #756157;
+}
+
+.contact:active {
+ color: rgba(117, 97, 87, 0.30);
+}
+
 .copyright {
   display: block;
   min-width: 115px;
   min-height: 33px;
+}
+
+.copyright-icon {
+  fill: #000000;
+}
+
+.copyright-icon:hover {
+  fill: #756157;
+}
+
+.copyright-icon:focus {
+  fill: #756157;
+}
+
+.copyright-icon:active {
+  fill: #756157;
+  fill-opacity: 0.3;
 }
 
 /*Catalog*/
@@ -419,6 +598,21 @@ body {
   padding: 0;
   display: flex;
   margin-bottom: 40px;
+  position: relative;
+}
+
+.breadcrumbs-item::after {
+  background-image: url(../images/icons/icons-arrow-right.svg);
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 10px;
+  left: 25px;
+  top: 5px;
+}
+
+.breadcrumbs-item:last-child::after {
+  content: none;
 }
 
 .breadcrumbs-link {
@@ -430,6 +624,26 @@ body {
   min-height: 15px;
   display: block;
   margin-right: 29px;
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.60);
+}
+
+.breadcrumbs-link:focus {
+  color: #fffff;
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.breadcrumbs-icon {
+  fill: #ffffff;
+}
+
+.breadcrumbs-icon:hover {
+  fill: rgba(255, 255, 255, 0.60);
 }
 
 .filter-form {
@@ -494,12 +708,22 @@ body {
   margin-top: 56px;
   margin-bottom: 32px;
   border: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .reset-btn {
+  font-family: "PT Sans", sans-serif;
   background-color: transparent;
   display: block;
   border: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .catalog-sort {
@@ -526,6 +750,18 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   appearance: none;
+  cursor: pointer;
+  background-image: url(../images/icons/icons-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: 250px;
+}
+
+.catalog-select-control:hover {
+  border: 2px solid #68A2CA;
+}
+
+.catalog-select-control:focus {
+  border: 2px solid #68A2CA;
 }
 
 .catalog-view {
@@ -551,9 +787,48 @@ body {
   min-height: 48px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
+  cursor: pointer;
+}
+
+.catalog-view-link-card {
+  background-image: url(../images/icons/variant-card.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.catalog-view-link-slide {
+  background-image: url(../images/icons/variant-slideshow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.catalog-view-link-list {
+  background-image: url(../images/icons/variant-list.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .catalog-view-link-active {
+  border-color: #000000;
+}
+
+.catalog-view-link:hover {
+  border-color: #000000;
+}
+
+.catalog-view-link:focus {
+  outline: #68A2CA;
+}
+
+.catalog-view-link:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.catalog-view-link:focus-visible {
+  outline: 2px solid #68A2CA;
+}
+
+.catalog-view-link:active {
   border-color: #000000;
 }
 
@@ -645,6 +920,7 @@ body {
   padding: 0;
   display: flex;
   margin-bottom: 60px;
+  cursor: pointer;
 }
 
 .pagination-item:not(:last-child) {
@@ -669,11 +945,7 @@ body {
 
 
 
-.pagination-link-current {
-  color: #000000;
-  background-color: #F2F2F2;
-  padding: 12px 26px;
-}
+
 
 .pagination-link-more {
   color: #000000;
@@ -684,6 +956,39 @@ body {
 .pagination-link-doble {
   padding: 12px 19px;
 }
+
+.pagination-link:hover {
+  border: 1px solid #82B3D3;
+  background-color: #68A2CA;
+}
+
+.pagination-link:focus {
+  border: 1px solid #82B3D3;
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.pagination-link-current,
+.pagination-link-current:hover,
+.pagination-link-current:focus,
+.pagination-link-current:active {
+  color: #000000;
+  background-color: #F2F2F2;
+  padding: 12px 26px;
+  border: none;
+}
+
+.pagination-link-more:hover,
+.pagination-link-more:focus,
+.pagination-link-more:active {
+  border: none;
+  background-color: #ffffff;
+}
+
 
 /*Subscription Special*/
 
