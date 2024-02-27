@@ -1229,9 +1229,9 @@ body {
   background-color: rgba(242, 242, 242, 0.80);
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+} 
 
 .modal {
   position: relative;
