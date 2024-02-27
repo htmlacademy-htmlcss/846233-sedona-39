@@ -187,25 +187,25 @@
           <section class="modal-content">
             <h2 class="section-title modal-title">Поиск гостиницы в Седоне</h2>
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="field-group">
+              <p class="field-group arrival-date">
                 <label class="form-label" for="date-in">Дата заезда:</label>
-                <input class="field" type="text" id="date-in" placeholder="27 апреля 2020">
+                <input class="field" type="text" id="date-in" name="date-in" placeholder="27 апреля 2020">
               </p>
-              <p class="field-group">
-                <label class="form-label" for="date-in">Дата выезда:</label>
-                <input class="field" type="text" id="date-in" placeholder="1 сентября 2023">
+              <p class="field-group departure-date">
+                <label class="form-label" for="date-out">Дата выезда:</label>
+                <input class="field" type="text" id="date-out" name="date-out" placeholder="1 сентября 2023">
               </p>
               <div class="field-group-wrapper">
-                <p class="field-group">
+                <p class="field-group adults-count">
                   <label class="form-label" for="adults">Взрослые:</label>
-                  <input class="field" type="number" id="adults" placeholder="2" min="1" max="4">
+                  <input class="field" type="number" id="adults" name="adults" placeholder="2" min="1" max="4">
                 </p>
-                <p class="field-group">
+                <p class="field-group childrens-count">
                   <label class="form-label" for="children">Дети:</label>
-                  <input class="field" type="number" id="children" placeholder="2" min="0" max="4">
+                  <input class="field" type="number" id="children" name="children" placeholder="2" min="0" max="4">
                 </p>
               </div>
-              <a class="modal-btn btn" href="#">Найти</a>
+              <a class="modal-btn btn--light btn" href="#">Найти</a>
             </form>
           </section>
         </div>

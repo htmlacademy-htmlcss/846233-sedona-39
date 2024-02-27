@@ -1092,10 +1092,6 @@ body {
   background-color: #7DB54F;
 }
 
-.card-star {
-
-}
-
 .star {
   display: block;
   background-image: url(../images/icons/icons-star.svg);
@@ -1233,9 +1229,9 @@ body {
   background-color: rgba(242, 242, 242, 0.80);
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 .modal {
   position: relative;
@@ -1289,22 +1285,16 @@ body {
   margin-bottom: 64px;
 }
 
-/* .search-form {
-  display: flex;
-  flex-direction: column;
+.search-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 48px);
+  row-gap: 48px;
 }
 
 .field-group-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.field-group {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 48px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 247px auto 242px;
 }
 
 .form-label {
@@ -1314,19 +1304,147 @@ body {
   line-height: 24px;
   text-transform: capitalize;
   align-self: center;
-  margin-right: 24px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.field-group {
+  margin: 0;
+  padding: 0;
 }
 
 .field {
   background-color: #F2F2F2;
+  margin: 0;
   padding: 12px 20px;
-  flex-grow: 1;
-}
-
-.field::placeholder {
+  box-sizing: border-box;
   font-family: "PT Sans";
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+  border: none;
+  border-radius: 4px;
+}
+
+.field[type="number"]::-webkit-outer-spin-button,
+.field[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.field[type="number"] {
+  padding: 14px 40px;
+  position: relative;
+}
+
+
+.field[type="number"]::placeholder {
+  text-align: center;
+}
+
+.field::placeholder {
   color: #000000;
-} */
+}
+
+.modal-btn {
+  border-radius: 10px;
+  background: #83B3D3;
+  padding-top: 13px;
+}
+
+.arrival-date {
+  display: grid;
+  grid-template-columns: 137px 440px;
+  position: relative;
+}
+
+.arrival-date::before {
+  content: "";
+  background-image: url(../images/icons/icons-calendar.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  right: 20px;
+  opacity: 0.3;
+}
+
+.arrival-date::after {
+  content: "Мы не можем отправить вас в прошлое.";
+  color: #FF5757;
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  width: 280px;
+  padding-left: 156px;
+}
+
+.departure-date {
+  display: grid;
+  grid-template-columns: 137px 440px;
+  position: relative;
+}
+
+.departure-date::before {
+  content: "";
+  background-image: url(../images/icons/icons-calendar.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  right: 20px;
+  opacity: 0.3;
+}
+
+.departure-date::after {
+  content: "На эти даты есть свободные номера. Пока есть.";
+  color: #333333;
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  width: 331px;
+  padding-left: 156px;
+}
+
+.adults-count {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.childrens-count {
+  grid-column: 3/4;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.childrens-count::before {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  background-color: #83B3D3;
+  border-radius: 50%;
+  left: 60px;
+  top: 12px;
+}
+
+.childrens-count::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 12px;
+  background-image: url(../images/icons/icons-info.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 72px;
+  top: 19px;
+}
