@@ -151,8 +151,8 @@ body {
   padding: 4px;
   font-weight: 400;
   position: absolute;
-  top: 11px;
-  left: 19px;
+  top: 13px;
+  left: 21px;
 }
 
 .btn {
@@ -292,7 +292,7 @@ body {
 }
 
 .advantages .section-title {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .advantages-section-description {
@@ -311,10 +311,12 @@ body {
 
 .advantages-item {
   width: 400px;
+
 }
 
 .advantages-item-wrapper {
   padding: 103px 85px;
+
 }
 
 
@@ -325,11 +327,17 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+  position: relative;
 }
 
 .advantages-img {
   vertical-align: bottom;
+}
+
+.advantages-description {
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-item--accent {
@@ -341,15 +349,35 @@ body {
   color: #ffffff;
 }
 
+.advantages-item--accent .advantages-title::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.30);
+  top: 83px;
+  left: 85px;
+}
+
 .advantages-item--accent {
   color: #ffffff;
   background-color: #82B3D3;
 }
 
 .advantages-item--regular {
-  padding: 103px 85px;
+  padding: 113px 85px;
   box-sizing: border-box;
   flex-grow: 1;
+}
+
+.advantages-item--regular .advantages-title::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.30);
+  top: 84px;
+  left: 85px;
 }
 
 .advantages-item--regular:nth-child(odd) {
@@ -371,12 +399,14 @@ body {
 
 .popular-advantages-item {
   width: 400px;
-  padding: 80px 85px;
+  padding: 78px 75px;
   box-sizing: border-box;
 }
 
 .popular-advantages-item .advantages-title {
   padding-top: 105px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .popular-advantages-item .advantages-description {
@@ -480,7 +510,7 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 45px;
   padding-bottom: 30px;
 
 }
@@ -557,6 +587,7 @@ body {
   display: block;
   min-width: 115px;
   min-height: 33px;
+  padding-top: 2px;
 }
 
 .copyright-icon {
