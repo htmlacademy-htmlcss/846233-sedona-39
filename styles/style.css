@@ -1231,7 +1231,7 @@ body {
 
 .modal-container-close {
   display: none;
-} 
+}
 
 .modal {
   position: relative;
@@ -1252,7 +1252,7 @@ body {
   content: "";
   padding: 0;
   top: 0;
-  right:-19px;
+  right: -19px;
   width: 52px;
   height: 52px;
   border-radius: 50%;
@@ -1278,6 +1278,20 @@ body {
 
 .modal-close-button::after {
   transform: rotate(-45deg);
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  background-color: #E6E6E6;
+  opacity: 0.3;
 }
 
 .modal-title {
@@ -1307,6 +1321,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  display: block;
 }
 
 .field-group {
@@ -1325,6 +1340,7 @@ body {
   line-height: 24px;
   border: none;
   border-radius: 4px;
+  color: #000000;
 }
 
 .field[type="number"]::-webkit-outer-spin-button,
@@ -1333,11 +1349,23 @@ body {
   margin: 0;
 }
 
-.field[type="number"] {
-  padding: 14px 40px;
-  position: relative;
+.field[type="text"]::placeholder {
+  color: #000000;
+  opacity: 0.6;
 }
 
+.field[type="number"] {
+  padding: 14px 40px;
+}
+
+.field[type="text"]:hover {
+  background-color: #E6E6E6;
+}
+
+.field[type="text"]:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
 
 .field[type="number"]::placeholder {
   text-align: center;
@@ -1372,8 +1400,7 @@ body {
   opacity: 0.3;
 }
 
-.arrival-date::after {
-  content: "Мы не можем отправить вас в прошлое.";
+.field-unvalid {
   color: #FF5757;
   font-family: "PT Sans";
   font-size: 16px;
@@ -1381,6 +1408,7 @@ body {
   line-height: 21px;
   width: 280px;
   padding-left: 156px;
+  padding-top: 5px;
 }
 
 .departure-date {
@@ -1402,8 +1430,7 @@ body {
   opacity: 0.3;
 }
 
-.departure-date::after {
-  content: "На эти даты есть свободные номера. Пока есть.";
+.field-valid {
   color: #333333;
   font-family: "PT Sans";
   font-size: 16px;
@@ -1411,13 +1438,13 @@ body {
   line-height: 21px;
   width: 331px;
   padding-left: 156px;
+  padding-top: 5px;
 }
 
 .adults-count {
   display: flex;
   justify-content: space-between;
 }
-
 
 .childrens-count {
   grid-column: 3/4;
@@ -1426,25 +1453,92 @@ body {
   position: relative;
 }
 
-.childrens-count::before {
-  position: absolute;
-  content: "";
-  width: 26px;
-  height: 26px;
-  background-color: #83B3D3;
-  border-radius: 50%;
-  left: 60px;
-  top: 12px;
+.counter {
+  position: relative;
 }
 
-.childrens-count::after {
+.count-down {
   position: absolute;
-  content: "";
-  width: 2px;
-  height: 12px;
-  background-image: url(../images/icons/icons-info.svg);
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/icons/icons-minus.svg);
   background-repeat: no-repeat;
   background-position: center;
-  left: 72px;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.count-up {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/icons/icons-plus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   top: 19px;
+  right: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.count-down:focus,
+.count-up:focus {
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
+}
+
+.tooltip {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 5px;
+  left: 60px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+  position: relative;
+}
+
+.tooltip-text {
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 15px 18px 18px 22px;
+  background-color: #333333;
+  border-radius: 10px;
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.30);
+  width: 256px;
+  position: absolute;
+  top: 45px;
+  left: -114px;
+  text-transform: none;
+  box-sizing: border-box;
+  display: none;
+}
+
+.tooltip-text::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/icons/icon-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 19px;
+  height: 9px;
+  top: -9px;
+  left: 118px;
+}
+
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus+.tooltip-text {
+  display: inline-block;
 }
