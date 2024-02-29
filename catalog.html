@@ -9,6 +9,7 @@
   </head>
 
   <body>
+
     <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="logo" href="index.html">
@@ -43,18 +44,22 @@
         </ul>
       </nav>
     </header>
+
     <main class="main-inner main-container">
       <div class="inner-wrapper">
         <div class="catalog-wrapper">
+
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
+
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
                   <svg class="breadcrumbs-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                     width="13" height="13" fill="none" viewBox="0 0 13 13">
                     <path d="m6.37.5-6 5.8v6.2h12V6.3l-6-5.8Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
-                    <path d="M4.37 10.5h1V8h2v2.5h1V7h-4v3.5Z" /></svg>
+                    <path d="M4.37 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
+                  </svg>
                   <span class="visually-hidden">Главная страница</span>
                 </a>
               </li>
@@ -62,9 +67,12 @@
                 <a class="breadcrumbs-link" href="#" aria-current="page">Гостиницы</a>
               </li>
             </ul>
+
           </header>
+
           <section class="filter" data-test="filter">
             <h2 class="visually-hidden">Фильтр списка гостиниц</h2>
+
             <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
 
               <fieldset class="filter-group filter-infostructure">
@@ -93,6 +101,7 @@
                   </li>
                 </ul>
               </fieldset>
+
               <fieldset class="filter-group filter-type">
                 <legend class="filter-group-title">Тип жилья:</legend>
                 <ul class="filter-list">
@@ -120,8 +129,10 @@
                   </li>
                 </ul>
               </fieldset>
+
               <fieldset class="filter-group filter-price">
                 <legend class="filter-group-title">Стоимость, ₽:</legend>
+
                 <div class="range">
                   <div class="range-wrapper-inputs">
                     <label class="range-label">
@@ -135,7 +146,7 @@
                   </div>
 
                   <div class="range-scale">
-                    <div class="range-bar" style="left: 0px; width: 226px;">
+                    <div class="range-bar" style="left: 0; width: 226px;">
                       <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену</span>
                       </button>
@@ -144,16 +155,21 @@
                       </button>
                     </div>
                   </div>
+
                 </div>
               </fieldset>
+
               <div class="filter-btns">
                 <button class="submit-btn btn btn--light" type="submit">Применить</button>
                 <button class="reset-btn btn" type="reset">Сбросить</button>
               </div>
+
             </form>
+
           </section>
         </div>
       </div>
+
       <section class="catalog catalog-wrapper" data-test="catalog">
         <div class="catalog-sort">
           <h2 class="section-title catalog-title">Найдено гостиниц: 38</h2>
@@ -185,6 +201,7 @@
         </div>
 
         <ul class="catalog-list">
+
           <li class="catalog-card card">
             <a class="card-link" href="#">
               <img class="card-img" src="images/content/amara-hotel.jpg" width="300" height="212" alt="Amara">
@@ -206,6 +223,7 @@
             </p>
             <p class="card-rate">Рейтинг: 8,5</p>
           </li>
+
           <li class="catalog-card card">
             <a class="card-link" href="#">
               <img class="card-img" src="images/content/villas-hotel.jpg" width="300" height="212" alt="Villas">
@@ -227,6 +245,7 @@
             </p>
             <p class="card-rate">Рейтинг: 9,2</p>
           </li>
+
           <li class="catalog-card card">
             <a class="card-link" href="#">
               <img class="card-img" src="images/content/desert-hotel.jpg" width="300" height="212" alt="Desert">
@@ -248,9 +267,10 @@
             </p>
             <p class="card-rate">Рейтинг: 6,9</p>
           </li>
+
           <li class="catalog-card card">
             <a class="card-link" href="#">
-              <img class="card-img" src="images/content/greentree-hotel.jpg" width="300" height="212" alt="Amara">
+              <img class="card-img" src="images/content/greentree-hotel.jpg" width="300" height="212" alt="Greentree">
             </a>
             <a class="card-link" href="#">
               <h3 class="card-title">GreenTree Inn</h3>
@@ -269,6 +289,7 @@
             </p>
             <p class="card-rate">Рейтинг: 5,0</p>
           </li>
+
         </ul>
 
         <ul class="pagination">
@@ -293,11 +314,13 @@
         </ul>
 
       </section>
+
       <section class="subscription" data-test="subscribe">
         <div class="subscription-wrapper">
           <h2 class="section-title">Подпишитесь на рассылку</h2>
           <p class="section-description subscription-section-description">Только полезная информация и никакого спама,
             честное бойскаутское!</p>
+
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="subscription-field">
               <span class="visually-hidden">Ваш e-mail</span>
@@ -305,11 +328,13 @@
                 placeholder="Ваш e-mail">
             </label>
             <button class="subscription-btn btn btn--light" type="submit">Подписаться</button>
-
           </form>
+
         </div>
       </section>
+
     </main>
+
     <footer class="page-footer" data-test="footer">
       <div class="page-footer-wrapper">
         <ul class="social-list">
