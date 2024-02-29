@@ -183,6 +183,69 @@
       </div>
     </footer>
 
+    <div class="modal-container modal-container-close">
+      <div class="modal" data-test="modal">
+        <div class="modal-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="section-title modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group arrival-date">
+                <label class="form-label" for="date-in">Дата заезда:</label>
+                <input class="field" type="text" id="date-in" name="date-in" placeholder="Укажите дату" value="27 апреля 2020">
+                <span class="field-unvalid">Мы не можем отправить вас в прошлое.</span>
+              </p>
+              <p class="field-group departure-date">
+                <label class="form-label" for="date-out">Дата выезда:</label>
+                <input class="field" type="text" id="date-out" name="date-out" placeholder="Укажите дату" value="1 сентября 2023">
+                <span class="field-valid">На эти даты есть свободные номера. Пока есть.</span>
+              </p>
+              <div class="field-group-wrapper">
+                <p class="field-group adults-count">
+                  <label class="form-label" for="adults">Взрослые:</label>
+                  <span class="counter">
+                    <button class="count-down" type="button">
+                      <span class="visually-hidden">Уменьшить</span>
+                    </button>
+                    <input class="field" type="number" id="adults" name="adults" placeholder="2" min="1" max="4">
+                    <button class="count-up" type="button">
+                      <span class="visually-hidden">Увеличить</span>
+                    </button>
+                  </span>
+                </p>
+                <p class="field-group childrens-count">
+                  <span class="form-label">
+                    <label class="form-label" for="children">Дети:</label>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button">
+                        <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">
+                          <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                          <path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z"
+                          clip-rule="evenodd" /></svg>
+                      </button>
+                      <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+                  </span>
+                  <span class="counter">
+                    <button class="count-down" type="button">
+                      <span class="visually-hidden">Уменьшить</span>
+                    </button>
+                    <input class="field" type="number" id="children" name="children" placeholder="2" min="0" max="4">
+                    <button class="count-up" type="button">
+                      <span class="visually-hidden">Увеличить</span>
+                    </button>
+                  </span>
+                </p>
+              </div>
+              <a class="modal-btn btn--light btn" href="#">Найти</a>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+
   </body>
 
 </html>

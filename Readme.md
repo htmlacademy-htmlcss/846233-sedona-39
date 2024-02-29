@@ -2,6 +2,7 @@
 
 * Студент: [Вероника Мисько](https://up.htmlacademy.ru/htmlcss/39/user/846233).
 * Наставник: `Неизвестно`.
+* Сайт: [Мой проект Седона] (https://veronicamisko.github.io/846233-sedona-39/)
 
 ---
 
@@ -9,6 +10,10 @@ _Не удаляйте и не обращайте внимание на фа�
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
 
 ---
+
+---
+### Заметки
+* Код гайд: [Кодгайд HTMLAcademy] (https://codeguide.academy/html-css.html#html-attr-order)
 
 ### Памятка
 
